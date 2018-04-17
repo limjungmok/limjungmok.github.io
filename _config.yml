@@ -16,18 +16,30 @@
 title: FE Study
 email: limjungmok@nts-corp.com
 description:
-  Study Javascript(based on ES5)\n
-  React\n
-  Sample Project\n
+  Study Javascript(based on ES5),
+  React,
+  Sample Project
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  limjungmok
 
+
+
+
+# 인코딩 설정
+encoding: utf-8
+
 # Build settings
 markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
 theme: minima
 gems:
   - jekyll-feed
 exclude:
   - Gemfile
   - Gemfile.lock
+  - README.md
+  - .git
+  - .gitignore
