@@ -4,13 +4,30 @@ title:  "JS - Function, Method, Property"
 date:   2018-04-17 10:42:32 +0900
 categories: js
 ---
+<style>
+    .paragraph {
+        font-size: 14px;
+        font-weight: 400;
+        white-space: pre-line;
+    }
 
+    .emp {
+        display: inline-block;
+        padding: 0 4px;
+        color: #fff;
+        font-size: 12px;
+        font-weight: 300;
+        line-height: 18px;
+        border-radius: 2px;
+        letter-spacing: 2px;
+        background-color: #2472f2;
+    }
+</style>
 ## **Function**
-
-함수는 언제든 반복되어 사용 가능한 Javascript Code Block 이다.  
+<p class="paragraph">함수는 언제든 반복되어 사용 가능한 Javascript Code Block 이다.  
 즉, 함수도 객체(Object)로 취급할 수 있다.  
 Javascript에서 가장 중요한 요소중 하나인 Scope는 함수 개념이므로, 다른 언어의 Block Scope와 구분해야 한다.
-
+</p>
 
 #### 1. 함수 선언식 (Function Declarations)
 
@@ -35,11 +52,12 @@ var 함수명 = function() {
 
 #### 3. 함수 선언식 vs 함수 표현식
 
-**함수 선언식은 호이스팅(Hoisting)에 영향을 받지만, 함수 표현식은 호이스팅에 영향을 받지 않는다.**  
+<p class="paragraph"><strong>함수 선언식은 호이스팅(Hoisting)에 영향을 받지만, 함수 표현식은 호이스팅에 영향을 받지 않는다.</strong>
 
 * 호이스팅이란 ?  
 	자바스크립트의 변수 및 함수 선언부분이 코드 최상단으로 끌어올려지는 현상을 의미한다.  
 	이때, 함수 내에서 선언된다면 함수 블록의 최상위로, 함수 바깥이라면 전역 최상위로 올라간다.
+</p>
 
 ```javascript
 var a = 10;
@@ -84,11 +102,10 @@ rect.getBounds(); // 200
 
 <br>
 
-### 호이스팅을 활용하는 경우
+#### 호이스팅을 활용하는 경우
 
-일반적으로 함수 표현식을 지향하고, 변수와 함수 선언식은 최대한 상단에 정의하는걸 권장한다.  
-**지금까지 보면 호이스팅은 단점만 있어보이지만, 클로저 / 콜백으로써 활용할 수 있다.**
-
+<p class="paragraph">일반적으로 함수 표현식을 지향하고, 변수와 함수 선언식은 최대한 상단에 정의하는걸 권장한다.  
+**지금까지 보면 호이스팅은 단점만 있어보이지만, 클로저 / 콜백으로써 활용할 수 있다.**</p>
 1. 호이스팅 예제
 
 할당되기전 선언된 변수는 언제나 undefined 상태.
@@ -114,12 +131,10 @@ console.log(typeof myName); // function
 
 
 ### 정리
-
-1. 일관된 자신만의 코딩 컨벤션을 유지하는게 중요하다.
+<p class="paragraph">1. 일관된 자신만의 코딩 컨벤션을 유지하는게 중요하다.
 2. 함수 선언식을 사용하려면 차라리 호이스팅에 영향을 덜받도록 최상위에 선언하자.
 3. 함수 표현식을 지향하지만, 차이점을 알고 쓰면 둘다 효과적인 방법이다.
-
-
+</p>
 
 ### Reference
 
